@@ -1,0 +1,95 @@
+
+/* Light Brown: 706C61*/
+/* Cream: FDFCDC*/
+/* Blue: 3D405B*/
+/* Dark Purple: D7E3FC*/
+/* Mid Purple: E2EAFC */
+/* Light Purple: EDF2FB*/
+
+/* body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #EDF2FB;
+}
+
+.about--heading {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.about--summary {
+    display: flex;
+    
+}
+
+.about--summary > * {
+    width: 100%;
+    margin: 10px;
+}
+
+.about--summary-image {
+    display: block;
+    max-width:300px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+
+    border-radius: 9px;
+
+    margin-left: auto;
+}
+
+.about--summary-description {
+    max-width: 700px;
+    max-height:700px;
+    width: auto;
+    height: auto;
+
+    border-radius: 9px;
+
+    font-size: 25px;
+    margin-right: auto;
+    background-color: #EDF2FB;
+}
+
+.about--summary-description-para {
+    margin: 20px;
+
+}
+
+.skills--heading {
+    text-align: center;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 900px){
+
+    .about--summary {
+        display: block;
+    }
+
+    .about--summary > * {
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    .about--summary {
+        display: block;
+    }
+
+    .about--summary > * {
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skills--heading {
+        text-align: center;
+        font-weight: bolder;
+    }
+} */
