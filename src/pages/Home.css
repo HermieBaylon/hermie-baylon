@@ -272,9 +272,17 @@ body {
     }
 }
 
-/* For Industries */
+/* For skills */
 @media screen and (max-width: 500px) {
     .home--skills-container {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+/* For industries */
+@media screen and (max-width: 500px) {
+    .home--industries-container {
         margin-left: 100px;
         margin-right: 100px;
     }
