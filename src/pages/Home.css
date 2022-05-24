@@ -92,9 +92,13 @@ body {
     margin-top: -20px;
 }
 
-.home--industries {
+.home--industries-container {
     margin-top: 50px;
     margin-bottom: 50px;
+
+    height: 300px;
+    margin-left: 180px;
+    margin-right: 180px;
 }
 
 .home--industries-heading {

@@ -97,16 +97,19 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className='home--industries'>
+                <div className='home--industries-container'>
                     <h1 className='home--industries-heading'>Industries Served</h1>
-                    <section className='home--industries-served'>
+                    {/* <section className='home--industries-served'>
                         {industriesServed}
-                    </section>
+                    </section> */}
+                    <Carousel responsive={responsive}>
+                        {industriesServed}
+                    </Carousel>
                 </div>
                 <div className='home--skills'>
                     <div className='home--skills-container'>
                         <h1 className='home--skills-heading'>Skills</h1>
-                        <Carousel responsive={responsive} className='home--skills-list'>
+                        <Carousel responsive={responsive}>
                             {skills}
                         </Carousel>
                     </div>
