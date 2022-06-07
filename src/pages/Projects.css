@@ -1,0 +1,53 @@
+.heading {
+    text-align: center;
+}
+
+/* .carousel > * {
+    display: block;
+    max-width:30px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+} */
+
+.all-carousel-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.client-carousel-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.internal-carousel-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.university-carousel-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.testingImage {
+    display: block;
+    max-width: 240px;
+    max-height: 160px;
+    width: auto;
+    height: auto;
+    border-radius: 9px;
+    border: 3px solid black;
+}
+
+.testingImage:hover {
+    /* color: #111; 
+    background: greenyellow;  */
+    box-shadow: 0 0 10px #3D405B; 
+    border: 3.5px solid #3D405B;
+    cursor: pointer;
+}
+
+.label {
+    margin-left: 20px;
+}
