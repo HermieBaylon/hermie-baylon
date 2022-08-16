@@ -35,9 +35,6 @@ export default function Navbar() {
             <Link to="/projects">Projects</Link>
           </li>
           <li className="item">
-            <Link to="/about">About</Link>
-          </li>
-          <li className="item">
             <Link to="/contact">Contact Me</Link>
           </li>
         </ul>

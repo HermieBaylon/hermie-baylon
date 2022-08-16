@@ -1,0 +1,55 @@
+/* @import "../node_modules/bulma/css/bulma.css"; */
+/* @import "../../../node_modules/bulma/css/bulma.css"; */
+
+.contact-me {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.input-form > * {
+  display: block;
+  margin-left: 2rem;
+}
+
+.label-name {
+  margin-top: 2rem;
+}
+
+.user-input {
+  width: 50%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
+.label-email {
+}
+
+.input-message {
+  width: 70%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.button-submit {
+  background-color: #3d405b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.button-submit:hover {
+  color: #fdfcdc;
+  font-size: 14px;
+}

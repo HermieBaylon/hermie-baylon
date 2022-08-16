@@ -1,4 +1,4 @@
-.card {
+.tag {
   display: flex;
   flex-direction: column;
   max-width: 200px;
@@ -7,15 +7,15 @@
   height: auto;
 }
 
-.card--image {
+.tag--image {
   max-width: 200px;
   max-height: 200px;
   width: auto;
   height: auto;
-  border-radius: 9px 9px 0px 0px;
+  border-radius: 100px 100px 100px 100px;
 }
 
-.card--summary {
+.tag--summary {
   background-color: white;
   padding: 2px 20px;
   border-radius: 0px 0px 9px 9px;
