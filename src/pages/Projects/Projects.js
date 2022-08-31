@@ -1,14 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Projects.css";
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
-import ProjectData from "../../Data/ProjectData";
+import { WestMonroe, University } from "../../Data/ProjectData";
+import Modal from "../../components/Modal.jsx";
 
 export default function Projects() {
-  const ProjectDataImages = ProjectData.map((project) => {
-    return <img src={`../images/${project}`} />;
+  const [isOpen, setIsOpen] = useState(false);
+  const [summary, setSummary] = useState("");
+
+  const WestMonroeProjects = WestMonroe.map((project) => {
+    return (
+      <img
+        className="testingImage"
+        src={`../images/${project.source}`}
+        onClick={() => {
+          setIsOpen(true);
+          setSummary(project.summary);
+        }}
+      />
+    );
+  });
+
+  const UniversityProjects = University.map((project) => {
+    return (
+      <img
+        className="testingImage"
+        src={`../images/${project.source}`}
+        onClick={() => {
+          setIsOpen(true);
+          setSummary(project.summary);
+        }}
+      />
+    );
   });
 
   const responsive = {
@@ -31,39 +55,22 @@ export default function Projects() {
   };
 
   return (
-    <div>
-      <h1 className="heading">Projects</h1>
+    <>
+      <h1 className="projects-heading">Projects</h1>
 
       <h4 className="label">West Monroe Projects</h4>
       <div className="internal-carousel-container">
-        <Carousel responsive={responsive}>
-          <img
-            className="testingImage"
-            src="../images/beaconMobility.jpg"
-          ></img>
-          <img className="testingImage" src="../images/backbase.jpg"></img>
-          <img className="testingImage" src="../images/pricingTool.jpg"></img>
-          <img className="testingImage" src="../images/dashboard.jpg"></img>
-        </Carousel>
+        <Carousel responsive={responsive}>{WestMonroeProjects}</Carousel>
       </div>
       <h4 className="label">University Projects</h4>
       <div className="university-carousel-container">
-        <Carousel responsive={responsive}>
-          <img className="testingImage" src="../images/pep8Simulator.jpg"></img>
-          <img className="testingImage" src="../images/harmony.jpg"></img>
-          <img className="testingImage" src="../images/hailPizza.jpg"></img>
-          <img
-            className="testingImage"
-            src="../images/asteroidFighter.jpg"
-          ></img>
-        </Carousel>
+        <Carousel responsive={responsive}>{UniversityProjects}</Carousel>
       </div>
-      {/* <h4 className='label'>Side Projects</h4>
-            <h4 className='label'>Leetcode Application Projects</h4> */}
       <br></br>
       <br></br>
       <br></br>
       <br></br>
-    </div>
+      {isOpen && <Modal setIsOpen={setIsOpen} summary={summary} />}
+    </>
   );
 }

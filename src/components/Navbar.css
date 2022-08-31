@@ -56,6 +56,15 @@
     padding: 20px 0;
   }
 
+  .item-resume {
+    font-size: 20px;
+    border-top: 1px solid white;
+    cursor: pointer;
+    text-align: center;
+    width: 85%;
+    padding: 20px 0;
+  }
+
   .hamburger {
     display: block;
     width: 50px;
