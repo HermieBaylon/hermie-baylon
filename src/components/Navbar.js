@@ -37,6 +37,9 @@ export default function Navbar() {
           <li className="item">
             <Link to="/contact">Contact Me</Link>
           </li>
+          {/* <li className="item-resume">
+            <Link to="HermieBaylonResume2022.pdf">My Resume</Link>
+          </li> */}
         </ul>
       )}
       {!navMenu && (
