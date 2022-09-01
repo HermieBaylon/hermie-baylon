@@ -79,36 +79,38 @@ export default function Home() {
           <div className="home--fun-facts">
             <div className="home--fun-fact">
               <MdWorkOutline className="icon"></MdWorkOutline>
-              <h1>1</h1>
-              <h4>Years of</h4>
-              <h4>Experience</h4>
+              <p className="home--fun-fact-number">1</p>
+              <p className="home--fun-fact-label">Years of</p>
+              <p className="home--fun-fact-label">Experience</p>
             </div>
 
             <div className="home--fun-fact">
               <GrMoney className="icon"></GrMoney>
-              <h1>$950k</h1>
-              <h4>Engagement</h4>
-              <h4>Service</h4>
+              <p className="home--fun-fact-number">$950k</p>
+              <p className="home--fun-fact-label">Engagement</p>
+              <p className="home--fun-fact-label">Service</p>
             </div>
 
             <div className="home--fun-fact">
               <AiOutlineFundProjectionScreen className="icon"></AiOutlineFundProjectionScreen>
-              <h1>10+</h1>
-              <h4>Projects</h4>
-              <h4>Completed</h4>
+              <p className="home--fun-fact-number">10+</p>
+              <p className="home--fun-fact-label">Projects</p>
+              <p className="home--fun-fact-label">Completed</p>
             </div>
 
             <div className="home--fun-fact">
               <BsEmojiSmile className="icon"></BsEmojiSmile>
-              <h1>6</h1>
-              <h4>Satisfied</h4>
-              <h4>Clients</h4>
+              <p className="home--fun-fact-number">6</p>
+              <p className="home--fun-fact-label">Satisfied</p>
+              <p className="home--fun-fact-label">Clients</p>
             </div>
           </div>
         </div>
         <div className="home--industries-container">
           <h1 className="home--industries-heading">Industries Served</h1>
-          <Carousel responsive={responsive}>{industriesServed}</Carousel>
+          <Carousel className="home--industries" responsive={responsive}>
+            {industriesServed}
+          </Carousel>
         </div>
         <div className="home--skills">
           <div className="home--skills-container">
@@ -125,7 +127,6 @@ export default function Home() {
               className="home--contacts-logo"
               src="../images/BlueAndYellow.png"
             ></img>
-            <br></br>
             <br></br>
             <br></br>
             <h4>253-844-8998</h4>
