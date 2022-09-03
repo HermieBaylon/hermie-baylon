@@ -93,10 +93,8 @@ body {
 
 .home--contacts-logo {
   display: flex;
-  height: 30px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -20px;
 }
 
 .home--contacts-container {
@@ -168,7 +166,7 @@ body {
 
   .home--fun-facts > .home--fun-fact > .home--fun-fact-label {
     font-size: 1.3vw;
-    margin-top: -20px;
+    margin-top: -1vw;
     font-weight: bold;
   }
 
@@ -188,7 +186,6 @@ body {
     height: 25vw;
     padding-top: 4vw;
     margin-top: 4.5vw;
-    margin-bottom: 4.5vw;
     margin-left: 14.1vw;
     margin-right: 14.1vw;
   }
@@ -203,6 +200,11 @@ body {
 
   .home--contacts-container > * {
     font-size: 3vw;
+  }
+
+  .home--contacts-logo {
+    height: 3vw;
+    margin-top: -1.5vw;
   }
 
   .home--contacts-header {
@@ -220,6 +222,95 @@ body {
 }
 
 @media (orientation: portrait) {
+  .home--summary {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  .home--summary-image {
+    max-height: 70vw;
+  }
+
+  .home--summary-description {
+    max-height: 90vw;
+  }
+
+  .home--summary-description-header {
+    margin: 3vw;
+    font-size: 6vw;
+  }
+
+  .home--summary-description-para {
+    margin: 3vw;
+    font-size: 3.5vw;
+  }
+
+  .home--facts {
+    padding-top: 4vw;
+  }
+
+  .home--fun-facts > .home--fun-fact > .home--fun-fact-number {
+    font-size: 6vw;
+    font-weight: bold;
+    margin-top: 1vw;
+  }
+
+  .home--fun-facts > .home--fun-fact > .home--fun-fact-label {
+    font-size: 4vw;
+    margin-top: -4vw;
+    font-weight: bold;
+  }
+
+  .home--fun-facts > .home--fun-fact > .icon {
+    font-size: 7vw;
+  }
+
+  .home--industries-container {
+    height: 45vh;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .home--skills-container {
+    padding-top: 2vw;
+    height: 45vh;
+    margin-top: -4vw;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .home--contacts {
+    font-size: 2vh;
+  }
+
+  .home--contacts-card > h4 {
+    margin-bottom: 10px;
+  }
+
+  .home--contacts-container > * {
+    font-size: 5vh;
+  }
+
+  .home--contacts-header {
+    margin-top: 5vh;
+  }
+
+  .home--contacts-logo {
+    height: 3vh;
+    margin-top: -1.5vw;
+  }
+
+  .home--contacts-card {
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+  }
+
+  .home--contacts-card > h4 {
+    margin-top: -2vw;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -263,7 +354,7 @@ body {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
   .home--industries-served {
     grid-template-columns: 250px 250px;
     grid-template-rows: 300px;
@@ -281,7 +372,7 @@ body {
   }
   .home--fun-facts {
     grid-template-columns: 250px;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 180px 180px 180px;
   }
 }
 
