@@ -1,15 +1,15 @@
 .card {
   display: flex;
   flex-direction: column;
-  max-width: 200px;
-  max-height: 250px;
+  /* max-width: 200px;
+  max-height: 250px; */
   width: auto;
   height: auto;
 }
 
 .card--image {
-  max-width: 200px;
-  max-height: 200px;
+  /* max-width: 200px;
+  max-height: 200px; */
   width: auto;
   height: auto;
   border-radius: 9px 9px 0px 0px;
@@ -19,4 +19,14 @@
   background-color: white;
   padding: 2px 20px;
   border-radius: 0px 0px 9px 9px;
+}
+
+@media (orientation: landscape) {
+  .card {
+    max-width: 16.5vw;
+  }
+  .card-title {
+    font-size: 1.35vw;
+    font-weight: bold;
+  }
 }

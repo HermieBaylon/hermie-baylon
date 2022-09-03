@@ -17,166 +17,84 @@ body {
 .home--summary {
   display: flex;
   background-color: #edf2fb;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .home--summary > * {
   width: 100%;
-  margin: 10px;
 }
 
 .home--summary-image {
   display: block;
-  max-width: 300px;
-  max-height: 300px;
   width: auto;
   height: auto;
-
   border-radius: 9px;
-  /* border: 2px solid black; */
-
   margin-left: auto;
 }
 
 .home--summary-description {
-  max-width: 700px;
-  max-height: 700px;
   width: auto;
   height: auto;
 
   border-radius: 9px;
-
-  font-size: 25px;
   margin-right: auto;
   background-color: #edf2fb;
 }
 
-.home--summary-description-header {
-  margin: 20px;
-}
-
 .home--summary-description-para {
-  margin: 20px;
-  font-size: 16px;
   line-height: 2em;
 }
 
 .home--facts {
   background-color: #e2eafc;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .home--fun-facts {
   display: grid;
-
-  grid-template-columns: 250px 250px 250px 250px;
-  grid-template-rows: 200px;
-
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 50px; */
 }
 
 .home--fun-facts > .home--fun-fact {
   text-align: center;
 }
 
-.home--fun-facts > .home--fun-fact > .icon {
-  font-size: xx-large;
+.home--fun-facts > .home--fun-fact > .home--fun-fact-number {
+  font-weight: bold;
 }
 
-.home--fun-facts > .home--fun-fact > h4 {
-  margin-top: -20px;
-}
-
-.home--industries-container {
-  margin-top: 50px;
-  margin-bottom: 50px;
-
-  height: 300px;
-  margin-left: 180px;
-  margin-right: 180px;
+.home--fun-facts > .home--fun-fact > .home--fun-fact-label {
+  font-weight: bold;
 }
 
 .home--industries-heading {
   text-align: center;
 }
 
-.home--industries-served {
-  display: grid;
-
-  grid-template-columns: 250px 250px 250px 250px;
-  grid-template-rows: 300px;
-
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.home--industries-served > * {
-  margin-right: 30px;
-  margin-left: 30px;
-}
-
-.home--industries-served > *:hover {
-  -webkit-box-shadow: 11px 13px 59px -10px rgba(0, 0, 0, 0.84);
-  -moz-box-shadow: 11px 13px 59px -10px rgba(0, 0, 0, 0.84);
-  box-shadow: 11px 13px 59px -10px rgba(0, 0, 0, 0.84);
-  cursor: pointer;
-}
-
 .home--skills {
   background-color: #e2eafc;
-  padding-bottom: 50px;
 }
 
 .home--skills-heading {
   text-align: center;
-  /* margin-top: 100px; */
 }
 
 .home--skills-container {
   background-color: #e2eafc;
-  height: 300px;
-  margin-left: 180px;
-  margin-right: 180px;
-  padding-top: 50px;
-}
-
-.home--skills-list {
-}
-
-.home--skills-list > * {
-}
-
-.home--contacts {
 }
 
 .home--contacts-header {
-  margin-top: 50px;
   text-align: center;
-}
-
-.home--contacts-card {
-  margin-top: 60px;
-  margin-bottom: 50px;
 }
 
 .home--contacts-card > h4 {
   text-align: center;
-  margin-top: -20px;
 }
 
 .home--contacts-logo {
-  /* display: block; */
   display: flex;
-  height: 30px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -20px;
 }
 
 .home--contacts-container {
@@ -187,7 +105,6 @@ body {
 }
 
 .home--contacts-container > * {
-  font-size: xx-large;
   margin-left: 10px;
   margin-right: 10px;
   color: black;
@@ -207,6 +124,193 @@ body {
 }
 .home--contacts-container > .home--contacts-instagram:hover {
   color: #fb3958;
+}
+
+@media (orientation: landscape) {
+  .home--summary {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  .home--summary-image {
+    max-width: 24vw;
+  }
+
+  .home--summary-description {
+    max-width: 50vw;
+  }
+
+  .home--summary-description-header {
+    margin: 2vw;
+    font-size: 2vw;
+  }
+
+  .home--summary-description-para {
+    margin: 2vw;
+    font-size: 1.3vw;
+  }
+
+  .home--facts {
+    padding-top: 4vw;
+  }
+
+  .home--fun-facts {
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 20vw;
+  }
+
+  .home--fun-facts > .home--fun-fact > .home--fun-fact-number {
+    font-size: 2vw;
+    font-weight: bold;
+  }
+
+  .home--fun-facts > .home--fun-fact > .home--fun-fact-label {
+    font-size: 1.3vw;
+    margin-top: -1vw;
+    font-weight: bold;
+  }
+
+  .home--fun-facts > .home--fun-fact > .icon {
+    font-size: 3vw;
+  }
+
+  .home--industries-container {
+    height: 25vw;
+    margin-top: 4.5vw;
+    margin-bottom: 4.5vw;
+    margin-left: 14.1vw;
+    margin-right: 14.1vw;
+  }
+
+  .home--skills-container {
+    height: 25vw;
+    padding-top: 4vw;
+    margin-top: 4.5vw;
+    margin-left: 14.1vw;
+    margin-right: 14.1vw;
+  }
+
+  .home--skills {
+    padding-bottom: 5vw;
+  }
+
+  .home--contacts {
+    font-size: 1.35vw;
+  }
+
+  .home--contacts-container > * {
+    font-size: 3vw;
+  }
+
+  .home--contacts-logo {
+    height: 3vw;
+    margin-top: -1.5vw;
+  }
+
+  .home--contacts-header {
+    margin-top: 4vw;
+  }
+
+  .home--contacts-card {
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+  }
+
+  .home--contacts-card > h4 {
+    margin-top: -2vw;
+  }
+}
+
+@media (orientation: portrait) {
+  .home--summary {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  .home--summary-image {
+    max-height: 70vw;
+  }
+
+  .home--summary-description {
+    max-height: 90vw;
+  }
+
+  .home--summary-description-header {
+    margin: 3vw;
+    font-size: 6vw;
+  }
+
+  .home--summary-description-para {
+    margin: 3vw;
+    font-size: 3.5vw;
+  }
+
+  .home--facts {
+    padding-top: 4vw;
+  }
+
+  .home--fun-facts > .home--fun-fact > .home--fun-fact-number {
+    font-size: 6vw;
+    font-weight: bold;
+    margin-top: 1vw;
+  }
+
+  .home--fun-facts > .home--fun-fact > .home--fun-fact-label {
+    font-size: 4vw;
+    margin-top: -4vw;
+    font-weight: bold;
+  }
+
+  .home--fun-facts > .home--fun-fact > .icon {
+    font-size: 7vw;
+  }
+
+  .home--industries-container {
+    height: 45vh;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .home--skills-container {
+    padding-top: 2vw;
+    height: 45vh;
+    margin-top: -4vw;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .home--contacts {
+    font-size: 2vh;
+  }
+
+  .home--contacts-card > h4 {
+    margin-bottom: 10px;
+  }
+
+  .home--contacts-container > * {
+    font-size: 5vh;
+  }
+
+  .home--contacts-header {
+    margin-top: 5vh;
+  }
+
+  .home--contacts-logo {
+    height: 3vh;
+    margin-top: -1.5vw;
+  }
+
+  .home--contacts-card {
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+  }
+
+  .home--contacts-card > h4 {
+    margin-top: -2vw;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -250,7 +354,7 @@ body {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
   .home--industries-served {
     grid-template-columns: 250px 250px;
     grid-template-rows: 300px;
@@ -268,7 +372,7 @@ body {
   }
   .home--fun-facts {
     grid-template-columns: 250px;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 180px 180px 180px;
   }
 }
 

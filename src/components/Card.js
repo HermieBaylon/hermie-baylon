@@ -9,7 +9,7 @@ export default function Card(props) {
     <div className="card">
       <img src={`../images/${props.skill.image}`} className="card--image" />
       <div className="card--summary">
-        <h4>{props.skill.name}</h4>
+        <p className="card-title">{props.skill.name}</p>
       </div>
     </div>
   );
