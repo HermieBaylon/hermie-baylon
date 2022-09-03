@@ -1,24 +1,16 @@
 .projects-heading {
   text-align: center;
+  font-size: 2vw;
+  font-weight: bold;
 }
 
 /* .carousel > * {
-    display: block;
-    max-width:30px;
-    max-height:200px;
-    width: auto;
-    height: auto;
+  display: block;
+  max-width: 30px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
 } */
-
-.all-carousel-container {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.client-carousel-container {
-  margin-left: 50px;
-  margin-right: 50px;
-}
 
 .internal-carousel-container {
   margin-left: 50px;
@@ -32,8 +24,8 @@
 
 .testingImage {
   display: block;
-  max-width: 240px;
-  max-height: 160px;
+  max-width: 19.95vw;
+  max-height: 13.3vw;
   width: auto;
   height: auto;
   border-radius: 9px;
@@ -49,5 +41,7 @@
 }
 
 .label {
-  margin-left: 20px;
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin-left: 1vw;
 }
