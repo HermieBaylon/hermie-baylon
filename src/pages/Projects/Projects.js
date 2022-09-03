@@ -56,13 +56,13 @@ export default function Projects() {
 
   return (
     <>
-      <h1 className="projects-heading">Projects</h1>
+      <p className="projects-heading">Projects</p>
 
-      <h4 className="label">West Monroe Projects</h4>
+      <p className="label">West Monroe Projects</p>
       <div className="internal-carousel-container">
         <Carousel responsive={responsive}>{WestMonroeProjects}</Carousel>
       </div>
-      <h4 className="label">University Projects</h4>
+      <p className="label">University Projects</p>
       <div className="university-carousel-container">
         <Carousel responsive={responsive}>{UniversityProjects}</Carousel>
       </div>
