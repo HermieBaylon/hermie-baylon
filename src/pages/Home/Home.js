@@ -86,7 +86,7 @@ export default function Home() {
 
             <div className="home--fun-fact">
               <GrMoney className="icon"></GrMoney>
-              <p className="home--fun-fact-number">$950k</p>
+              <p className="home--fun-fact-number">$1.9 Million</p>
               <p className="home--fun-fact-label">Engagement</p>
               <p className="home--fun-fact-label">Service</p>
             </div>

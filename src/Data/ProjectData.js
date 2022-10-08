@@ -64,4 +64,10 @@ export const WestMonroe = [
     summary:
       "CLI stands for Continuous Learning Initiative, which is an internal initiative that encourages West Monroe tech employees to continue learning. The CLI Dashboard is a web application that contains all information about CLI such as its members, completed projects, and future updates. This application is implemented using Angular on the front-end and Node.js on the backend, as well as an external MongoDB Database to store information.",
   },
+  {
+    id: 5,
+    source: "gallagher.jpg",
+    summary:
+      "Designed an integrated software architecture for a global leader in insurance services in order to reduce manual data entry, increase revenue reliability, improve data quality, and build new capabilities. Technologies involved include Saleforce, AMP, Carrier Data, xRM (CBRS), OneStream, and OnSource.",
+  },
 ];
